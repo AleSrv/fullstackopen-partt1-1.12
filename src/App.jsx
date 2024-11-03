@@ -35,6 +35,7 @@ const App = () => {
   const mostVotedIndex = votes.indexOf(Math.max(...votes));
 
   const Ganador = () => {
+
     return (
       <div>
         <p style={{ marginTop: '20px', fontWeight: 'bold' }}>Anecdota más votada:</p>
@@ -53,12 +54,9 @@ const App = () => {
   return (
     <div className="App">
       <div className="full-width">
+
         <button onClick={handleNextAnecdote}>Next Anecdote</button>
-
         <p>Anecdota {selected} (con {votes[selected]} {votes[selected] > 1 ? "votos" : "voto"})</p>
-
-
-
         <p style={{
           boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
           backgroundColor: "whitesmoke",
